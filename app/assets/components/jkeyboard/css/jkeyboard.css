@@ -1,0 +1,72 @@
+/**
+ * @Author: Alcwyn Parker <alcwynparker>
+ * @Date:   2017-06-16T14:23:48+01:00
+ * @Email:  alcwynparker@gmail.com
+ * @Project: Concept Shed - AutoWed
+ * @Filename: jkeyboard.css
+ * @Last modified by:   alcwynparker
+ * @Last modified time: 2017-09-26T20:49:17+01:00
+ */
+
+.jkeyboard {
+  display: inline-block;
+}
+.jkeyboard, .jkeyboard .jline, .jkeyboard .jline ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.jkeyboard .jline {
+  text-align: center;
+  margin-left: -14px;
+}
+.jkeyboard .jline ul li {
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 0 3px #fff;
+  -webkit-box-shadow: inset 0 0 3px #fff;
+  margin: 10px 0 1px 14px;
+  color: #f7faf7;
+  border-radius: 25px;
+  width: 52px;
+  height: 52px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.jkeyboard .jline ul li.uppercase {
+  text-transform: uppercase;
+}
+.jkeyboard .jline ul li:hover, .jkeyboard .jline ul li:active {
+  background-color: #ddd;
+}
+.jkeyboard .jline .return {
+  width: 120px;
+}
+.jkeyboard .jline .space {
+  width: 456px;
+}
+.jkeyboard .jline .numeric_switch {
+  width: 84px;
+}
+.jkeyboard .jline .layout_switch {
+  background: url("../assets/locale.png") no-repeat center right;
+}
+.jkeyboard .jline .shift {
+  width: 100px;
+  background: url("../assets/shift.png") no-repeat center center;
+}
+.jkeyboard .jline .backspace {
+  width: 69px;
+  background: url("../assets/backspace.png") no-repeat center center;
+}

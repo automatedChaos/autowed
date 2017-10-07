@@ -1,0 +1,32 @@
+// @Author: Alcwyn Parker <alcwynparker>
+// @Date:   2017-09-24T20:35:12+01:00
+// @Email:  alcwynparker@gmail.com
+// @Project: Concept Shed - AutoWed
+// @Filename: _inputs.scss
+// @Last modified by:   alcwynparker
+// @Last modified time: 2017-10-07T12:04:31+01:00
+
+.button{
+  background:    #3d85c6;
+  border-radius: 2px;
+  padding:       8px 20px;
+  color:         #ffffff;
+  display:       inline-block;
+  text-align:    center;
+  text-shadow:   none;
+}
+
+
+input[type=text] {
+  display: inline-block;
+  line-height: 2em;
+  font-size: 2em;
+  padding: 10px 20px;
+  border: 1px solid #b7b7b7;
+  width:100%;
+  margin-bottom:50px;
+
+}
+input[type=text]:focus{
+    outline: none;
+}

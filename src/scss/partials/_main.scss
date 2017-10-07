@@ -1,0 +1,71 @@
+// @Author: Alcwyn Parker <alcwynparker>
+// @Date:   2017-09-24T20:35:12+01:00
+// @Email:  alcwynparker@gmail.com
+// @Project: Concept Shed - AutoWed
+// @Filename: _main.scss
+// @Last modified by:   alcwynparker
+// @Last modified time: 2017-09-26T20:53:51+01:00
+
+.main {
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+.screen{
+  width:100%;
+  height:100%;
+  margin:0px;
+  padding:0px;
+  display:none;
+  position:relative;
+  background:pink;
+}
+.keyboard-container{
+  width:700px;
+  margin:120px auto;
+}
+.screen1{
+
+}
+
+.screen2{
+    display:block;
+}
+
+.option-container{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  li{
+    width:200px;
+    height:120px;
+    display: inline-block;
+    margin: 20px;
+    padding:0;
+    a{
+      margin:0;
+      padding:0;
+      width: 100%;
+      height:100%;
+      line-height: 120px;
+      display:block;
+      text-align: center;
+      background: blue;
+      color: white;
+      font-size: 1.3em;
+      align-self: center;
+      &:hover{
+        background:green;
+      }
+    }
+    a.selected{
+      background: white;
+      color:#333;
+    }
+  }
+}

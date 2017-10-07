@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>AutoWed</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The interface for AutoWed">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link href="//www.google-analytics.com" rel="dns-prefetch">
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/components/jkeyboard/css/jkeyboard.css">
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="assets/components/jkeyboard/js/jkeyboard.js"></script>
+
+    <script src="assets/components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+
+    <div id="container">
+
+      <!-- Screen 1: -->
+      <section class="screen screen1">
+
+        <header class="header" role="banner">
+          <h1> Select the type of wedding you want: </h1>
+        </header>
+
+        <main class="main" role="main">
+
+          <ul class="option-container">
+            <li><a href="#">OPTION 1</a></li>
+            <li><a href="#">OPTION 2</a></li>
+            <li><a class="selected" href="#">OPTION 3</a></li>
+            <li><a href="#">OPTION 4</a></li>
+          </ul>
+
+        </main>
+
+        <footer class="footer">
+          <div class="button">
+            SELECT
+          </div>
+        </footer>
+
+      </section>
+
+      <!-- Screen 2:  -->
+      <section class="screen screen2">
+
+        <header class="header" role="banner">
+          <h1>Please enter the brides name:</h1>
+        </header>
+
+        <main class="main" role="main">
+
+          <div class="keyboard-container">
+
+            <input type="text" id="name-bride">
+            <div id="keyboard-bride"></div>
+
+          </div>
+
+        </main>
+
+      </section>
+
+      <!-- Screen 3:  -->
+      <section class="screen screen3">
+
+        <header class="header" role="banner">
+          <h1>Please enter the grooms name:</h1>
+        </header>
+
+        <main class="main" role="main">
+
+          <div class="keyboard-container">
+
+            <input type="text" class="keyboard-input" id="name-groom">
+            <div id="keyboard-groom"></div>
+
+          </div>
+
+        </main>
+
+      </section>
+
+    </div>
+
+    <script src="assets/js/scripts.min.js"></script>
+
+
+  </body>
+</html>
