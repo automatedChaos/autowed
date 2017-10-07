@@ -23,19 +23,26 @@
   $(function () {
     $('#keyboard-bride').jkeyboard({
 
-      layout: "english",
-      input: $("#name-bride")
+      layout: 'english',
+      input: $('#name-bride')
     });
 
     $('#keyboard-groom').jkeyboard({
 
-      layout: "english",
-      input: $("#name-groom")
+      layout: 'english',
+      input: $('#name-groom')
     });
+
+    $('input.keyboard-input').on('input', function(e){
+      this.value = toTitleCase(this.value);
+      console.log(this.value);
+    });
+
+    function toTitleCase(str){
+      return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+    }
   });
 
-  function toTitleCase(str){
-    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-  }
+
 
 })(jQuery, window, document);
