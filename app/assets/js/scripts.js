@@ -20,6 +20,12 @@
 
   'use strict';
 
+  $('.option-container li a').on('click', function(e){
+    e.preventDefault();
+    $('.option-container li a').removeClass('selected');
+    $(this).addClass('selected');
+  })
+
   $(function () {
     $('#keyboard-bride').jkeyboard({
 
@@ -35,7 +41,6 @@
 
     $('input.keyboard-input').on('input', function(e){
       this.value = toTitleCase(this.value);
-      console.log(this.value);
     });
 
     function toTitleCase(str){
